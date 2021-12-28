@@ -1,6 +1,6 @@
 <script>
   import "$lib/tailwind.css";
 </script>
-<div class="p-2">
+<div class="">
   <slot />
 </div>
