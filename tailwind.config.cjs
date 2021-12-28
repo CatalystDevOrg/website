@@ -1,6 +1,6 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,svelte}'],
-  darkMode: 'class',
+  darkMode: 'media',
   theme: {
     extend: {},
   },
