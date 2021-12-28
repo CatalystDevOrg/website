@@ -45,7 +45,7 @@
 		</Card>
 	</div>
 	<br class="mb-6" />
-	<h1 class="text-6xl text-gray-900 dark:text-gray-50">
+	<h1 class="p-4 text-6xl text-gray-900 dark:text-gray-50">
 		This is <b class="text-emerald-400">Catalyst.</b>
 	</h1>
 </div>
