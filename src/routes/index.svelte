@@ -5,6 +5,10 @@
   import Link from "$lib/components/Link.svelte";
 </script>
 
+<svelte:head>
+	<title>The Catalyst Browser Project</title>
+</svelte:head>
+
 <div class="min-h-[100vh] dark:bg-gray-900 p-2">
 	<h1 class="z-20 text-6xl leading-snug p-4 dark:text-gray-50 text-gray-900">
 		Surf the web with the <br />
