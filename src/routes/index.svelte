@@ -62,7 +62,8 @@
 	<br />
 	<a
 		href="https://github.com/JaydenDev/Catalyst/releases/latest"
-		class="hover:underline hover:text-gray-200 text-2xl transition w-full min-h-3 bg-blue-400 p-2 rounded flex text-center justify-center">Ready to use Catalyst?</a
+		class="hover:underline hover:text-gray-200 text-2xl transition w-full min-h-3 bg-gray-200 dark:bg-gray-800 p-4 rounded flex text-center justify-center">Ready to use Catalyst?</a
 	>
+	<br />
 	<p class="text-lg">Made by JaydenDev, webdev03, and <Link href="https://github.com/JaydenDev/Catalyst/graphs/contributors">other awesome contributors</Link>. Licensed under MIT License.</p>
 </div>
