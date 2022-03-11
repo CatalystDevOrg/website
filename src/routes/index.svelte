@@ -16,6 +16,11 @@
 	</h1>
 	<div class="flex flex-row flex-wrap row-span-3 space-x-6 flex-1">
     <span />
+		<a
+			href="https://github.com/JaydenDev/Catalyst/releases/latest"
+			class="hover:underline hover:text-gray-200 text-2xl transition w-full min-h-3 bg-gray-200 dark:bg-gray-800 p-4 rounded flex text-center justify-center">Ready to use Catalyst?</a
+		>
+	<br />
 		<Card>
 			<CardTitle>Private by design</CardTitle>
 			<CardBody
@@ -59,11 +64,6 @@
 		the masses. We always emphasise privacy and security, which is why we are
 		<b>fully open source</b>.
 	</p>
-	<br />
-	<a
-		href="https://github.com/JaydenDev/Catalyst/releases/latest"
-		class="hover:underline hover:text-gray-200 text-2xl transition w-full min-h-3 bg-gray-200 dark:bg-gray-800 p-4 rounded flex text-center justify-center">Ready to use Catalyst?</a
-	>
 	<br />
 	<p class="text-lg">Made by JaydenDev, webdev03, and <Link href="https://github.com/JaydenDev/Catalyst/graphs/contributors">other awesome contributors</Link>. Licensed under MIT License.</p>
 </div>
