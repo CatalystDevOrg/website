@@ -17,7 +17,7 @@
 	<div class="flex flex-row flex-wrap row-span-3 space-x-6 flex-1">
     <span />
 		<a
-			href="https://github.com/JaydenDev/Catalyst/releases/latest"
+			href="https://get-catalyst.github.io/download"
 			class="hover:underline hover:text-gray-200 text-2xl transition w-full min-h-3 bg-gray-200 dark:bg-gray-800 p-4 rounded flex text-center justify-center">Ready to use Catalyst?</a
 		>
 	<br />
