@@ -1,0 +1,7 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+.btn {
+    @apply animate-pulse grid place-items-center rounded-lg hover:bg-emerald-300 bg-emerald-400 text-5xl text-white p-2;
+}
