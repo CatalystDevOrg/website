@@ -27,9 +27,13 @@ export default class InstallLinks extends React.Component<
           >
             Learn More
           </a>
-          <button className="font-bold text-xl bg-mint-400 text-black w-fit px-4 py-2 rounded-md shadow-md">
+          <a
+            href="https://github.com/catalystdevorg/catalyst/releases"
+            target="_blank"
+            className="font-bold text-xl bg-mint-400 text-black w-fit px-4 py-2 rounded-md shadow-md"
+          >
             Get Catalyst -&gt;
-          </button>
+          </a>
         </div>
 
         <span className="font-extralight">- or -</span>
