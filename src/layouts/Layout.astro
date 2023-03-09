@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import "@fontsource/inter/900.css";
 import "@fontsource/inter/variable.css";
 
@@ -7,6 +9,8 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+
+import Catalyst from "../assets/catalyst.png";
 ---
 
 <!DOCTYPE html>
@@ -27,7 +31,7 @@ const { title } = Astro.props;
           class="flex flex-row max-w-[1200px] w-[85%] items-center justify-between h-full px-4"
         >
           <div class="flex flex-row items-center gap-1">
-            <img src="/catalyst.png" alt="Catalyst logo" class="h-10" />
+            <Image src={Catalyst} alt="Catalyst logo" class="h-10 w-10" />
             <h1 class="text-2xl">Catalyst</h1>
           </div>
 
