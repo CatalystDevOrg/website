@@ -5,12 +5,16 @@ type InstallLinksState = {
 };
 
 export default class InstallLinks extends React.Component<
-  null,
+  Record<string, never>,
   InstallLinksState
 > {
   state: InstallLinksState = {
     isWindows: false,
   };
+
+  constructor(props: Record<string, never>) {
+    super(props);
+  }
 
   componentDidMount() {
     this.state.isWindows = window.navigator.userAgent.indexOf("Win") !== -1;

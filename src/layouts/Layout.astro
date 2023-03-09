@@ -11,6 +11,7 @@ export interface Props {
 const { title } = Astro.props;
 
 import Catalyst from "../assets/catalyst.png";
+import OgImage from "../assets/og-image.png";
 ---
 
 <!DOCTYPE html>
@@ -20,7 +21,17 @@ import Catalyst from "../assets/catalyst.png";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href={Catalyst.src} />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="Catalyst is the open-source, private browser of the future."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content=`Catalyst / ${title}` />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:image" content={OgImage.src} />
+    <title>Catalyst / {title}</title>
   </head>
   <body class="min-h-screen flex flex-col">
     <header>
