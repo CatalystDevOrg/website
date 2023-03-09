@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
+import InstallLinks from "../components/InstallLinks";
 
 import Preview from "../assets/browser-preview.png";
 import Glow from "../assets/glow.png";
@@ -25,25 +26,13 @@ import Glow from "../assets/glow.png";
           </h1>
         </div>
 
-        <div class="flex flex-row gap-4">
-          <a
-            href="https://github.com/catalystdevorg/catalyst"
-            target="_blank"
-            class="font-bold text-xl bg-black w-fit px-4 py-2 rounded-md border-white/25 border-2"
-          >
-            Learn More
-          </a>
-          <button
-            class="font-bold text-xl bg-mint-400 text-black w-fit px-4 py-2 rounded-md"
-          >
-            Get Catalyst -&gt;
-          </button>
-        </div>
+        <InstallLinks />
       </div>
 
       <Image
         src={Preview}
         alt="Screenshot of Catalyst"
+        width={1200}
         class="rounded-t-md w-[85%] min-w-[650px] max-w-[1200px]"
       />
     </div>
@@ -51,7 +40,8 @@ import Glow from "../assets/glow.png";
     <Image
       src={Glow}
       alt="Glow"
-      class="fixed bottom-0 translate-y-[50%] left-[50%] translate-x-[-50%] -z-10 scale-[175%] w-[80vw] min-w-[600px] max-w-[1200px]"
+      width={1200}
+      class="fixed bottom-0 translate-y-[50%] left-[50%] translate-x-[-50%] -z-10 scale-[175%] w-[80vw] min-w-[650px] max-w-[1200px]"
     />
   </div>
 </Layout>
