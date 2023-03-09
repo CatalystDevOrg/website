@@ -20,19 +20,32 @@ import Layout from "../layouts/Layout.astro";
           </h1>
         </div>
 
-        <button
-          class="font-bold text-xl bg-mint-400 text-black w-fit px-4 py-2 rounded-md"
-          >Get Catalyst -&gt;
-        </button>
+        <div class="flex flex-row gap-4">
+          <a
+            href="https://github.com/catalystdevorg/catalyst"
+            target="_blank"
+            class="font-bold text-xl bg-black w-fit px-4 py-2 rounded-md border-white/25 border-2"
+          >
+            Learn More
+          </a>
+          <button
+            class="font-bold text-xl bg-mint-400 text-black w-fit px-4 py-2 rounded-md"
+          >
+            Get Catalyst -&gt;
+          </button>
+        </div>
       </div>
+
       <img
         src="/browser-preview.png"
+        alt="Screenshot of Catalyst"
         class="rounded-t-md w-[85%] min-w-[650px] max-w-[1200px]"
       />
     </div>
 
     <img
       src="/glow.png"
+      alt="Glow"
       class="fixed bottom-0 translate-y-[50%] left-[50%] translate-x-[-50%] -z-10 scale-[175%] w-[80vw] min-w-[600px] max-w-[1200px]"
     />
   </div>
