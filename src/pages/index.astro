@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Catalyst Browser">
+  <div class="w-full h-[calc(100vh-64px)] overflow-hidden">
+    <div
+      class="text-center w-full px-8 h-full flex flex-col items-center justify-center"
+    >
+      <div class="flex flex-col gap-8 items-center justify-center flex-grow">
+        <div class="flex flex-col items-center justify-center">
+          <h2 class="text-5xl">Surf the web with the</h2>
+          <h1 class="text-6xl">
+            Browser of the <wbr />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-mint-400 to-cyan-300"
+            >
+              Future
+            </span>
+          </h1>
+        </div>
+
+        <button
+          class="font-bold text-xl bg-mint-400 text-black w-fit px-4 py-2 rounded-md"
+          >Get Catalyst -&gt;
+        </button>
+      </div>
+      <img
+        src="/browser-preview.png"
+        class="rounded-t-md w-[85%] min-w-[650px] max-w-[1200px]"
+      />
+    </div>
+
+    <img
+      src="/glow.png"
+      class="fixed bottom-0 translate-y-[50%] left-[50%] translate-x-[-50%] -z-10 scale-[175%] w-[80vw] min-w-[600px] max-w-[1200px]"
+    />
+  </div>
+</Layout>

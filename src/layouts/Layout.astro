@@ -1,0 +1,50 @@
+---
+import "@fontsource/inter/900.css";
+import "@fontsource/inter/variable.css";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header
+      class="flex flex-row justify-between items-center w-full h-16 px-4 border-b-white/10 border-b-[1px]"
+    >
+      <div class="flex flex-row items-center gap-1">
+        <img src="/catalyst.png" alt="Catalyst logo" class="h-10" />
+        <h1 class="text-xl">Catalyst</h1>
+      </div>
+    </header>
+
+    <main class="flex flex-grow">
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    color: #fff;
+    background-color: #08070f;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+  }
+
+  @supports (font-variation-settings: normal) {
+    html {
+      font-family: "InterVariable", sans-serif;
+    }
+  }
+</style>
