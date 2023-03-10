@@ -1,0 +1,100 @@
+---
+import { Image } from "astro:assets";
+
+import "@fontsource/inter/900.css";
+import "@fontsource/inter/variable.css";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+import Catalyst from "../assets/catalyst.png";
+import OgImage from "../assets/og-image.png";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href={Catalyst.src} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="Catalyst is the open-source, private browser of the future."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:title" content=`Catalyst / ${title}` />
+    <meta
+      name="og:description"
+      content="The open-source, private browser of the future."
+    />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content={Astro.url.href} />
+    <meta name="og:image" content={OgImage.src} />
+    <meta name="og:image:type" content="image/png" />
+    <meta name="twitter:title" content=`Catalyst / ${title}` />
+    <meta
+      name="twitter:description"
+      content="The open-source, private browser of the future."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content={OgImage.src} />
+    <title>Catalyst / {title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header>
+      <div
+        class="flex items-center justify-center w-full h-16 border-b-white/10 border-b-2"
+      >
+        <div
+          class="flex flex-row max-w-[1200px] w-[85%] items-center justify-between h-full px-4"
+        >
+          <div class="flex flex-row items-center gap-1">
+            <Image src={Catalyst} alt="Catalyst logo" class="h-10 w-10" />
+            <div class="flex flex-row gap-2">
+              <h1 class="text-2xl">Catalyst</h1>
+              <span class="font-extralight text-2xl">/</span>
+              <span class="font-normal text-2xl">{title}</span>
+            </div>
+          </div>
+
+          <div class="flex flex-row items-center gap-4 opacity-60">
+            <a href="https://dsc.gg/catalystsoftware" target="_blank">
+              <img
+                src="/discord-mark-white.svg"
+                alt="Discord logo"
+                class="h-6"
+              />
+            </a>
+            <a href="https://github.com/catalystdevorg" target="_blank">
+              <img src="/github-mark-white.svg" alt="GitHub logo" class="h-7" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex flex-grow">
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    color: #fff;
+    background-color: #08070f;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+  }
+
+  @supports (font-variation-settings: normal) {
+    html {
+      font-family: "InterVariable", sans-serif;
+    }
+  }
+</style>
