@@ -27,13 +27,14 @@ import OgImage from "../assets/og-image.png";
       content="Catalyst is the open-source, private browser of the future."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content=`Catalyst / ${title}` />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url.href} />
-    <meta property="og:image" content={OgImage.src} />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627" />
+    <meta name="og:title" content=`Catalyst / ${title}` />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content={Astro.url.href} />
+    <meta name="og:image" content={OgImage.src} />
+    <meta name="og:image:type" content="image/png" />
+    <meta name="twitter:title" content=`Catalyst / ${title}` />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content={OgImage.src} />
     <title>Catalyst / {title}</title>
   </head>
   <body class="min-h-screen flex flex-col">
