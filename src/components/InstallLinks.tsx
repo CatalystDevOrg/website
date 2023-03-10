@@ -27,14 +27,14 @@ export default class InstallLinks extends React.Component<
           <a
             href="https://github.com/catalystdevorg/catalyst"
             target="_blank"
-            className="font-bold text-xl bg-black w-fit px-4 py-2 rounded-md border-white/25 border-2 shadow-md"
+            className="button bg-black border-white/25 border-2"
           >
             Learn More
           </a>
           <a
             href="https://github.com/catalystdevorg/catalyst/releases"
             target="_blank"
-            className="font-bold text-xl bg-mint-400 text-black w-fit px-4 py-2 rounded-md shadow-md"
+            className="button bg-mint-400 text-black"
           >
             Get Catalyst -&gt;
           </a>

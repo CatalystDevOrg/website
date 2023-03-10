@@ -18,7 +18,26 @@ module.exports = {
           900: "#06612e",
         },
       },
+      screens: {
+        short: { raw: "(max-height: 800px)" },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents, theme }) {
+      addComponents({
+        ".button": {
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontWeight: "bold",
+          fontSize: theme("fontSize.xl"),
+          width: "fit-content",
+          padding: `${theme("spacing.2")} ${theme("spacing.4")}`,
+          borderRadius: theme("borderRadius.md"),
+          boxShadow: theme("boxShadow.md"),
+        },
+      });
+    },
+  ],
 };
