@@ -49,7 +49,7 @@ export default class InstallLinks extends React.Component<
         <br />
         <span className="font-extralight">Debian/Ubuntu Linux</span>
         <div className="font-mono font-normal bg-deepblue border-white/10 border-2 p-2 rounded-lg text-left text-sm shadow-md">
-           curl -s --compressed "https://catalystdevorg.github.io/Debian/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/Debian.gpg >/dev/null
+           curl -s --compressed "https://catalystdevorg.github.io/Debian/KEY.gpg" | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/Debian.gpg
           <br />
           sudo curl -s --compressed -o /etc/apt/sources.list.d/repository.list "https://catalystdevorg.github.io/Debian/repository.list
           <br />
