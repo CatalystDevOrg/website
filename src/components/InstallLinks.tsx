@@ -42,7 +42,7 @@ export default class InstallLinks extends React.Component<
 
         <span className="font-extralight">- or -</span>
         <div className="font-mono font-normal bg-deepblue border-white/10 border-2 p-2 rounded-lg text-left text-sm shadow-md">
-          scoop bucket add ctlyst https://github.com/JaydenDev/ctlyst-bucket
+          scoop bucket add ctlyst https://github.com/jdev082/ctlyst-bucket
           <br />
           scoop install ctlyst
         </div>
