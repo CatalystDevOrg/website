@@ -22,7 +22,7 @@ export default class InstallLinks extends React.Component<
 
   render() {
     return (
-      <div className="flex flex-col gap-2 items-center justify-center">
+      <div className="flex flex-col m-4 gap-2 items-center justify-center">
         <div className="flex flex-row gap-4">
           <a
             href="https://github.com/catalystdevorg/catalyst"
@@ -32,11 +32,11 @@ export default class InstallLinks extends React.Component<
             Learn More
           </a>
           <a
-            href="https://github.com/catalystdevorg/catalyst/releases"
+            href="https://github.com/catalystdevorg/catalyst/releases/latest"
             target="_blank"
             className="button bg-mint-400 text-black"
           >
-            Get Catalyst -&gt;
+            Get Catalyst
           </a>
         </div>
       </div>
