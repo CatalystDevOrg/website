@@ -39,6 +39,17 @@ export default class InstallLinks extends React.Component<
             Get Catalyst
           </a>
         </div>
+        <br style={{lineHeight: "16pt"}}/>
+        <h1 className="text-xl">Advanced Options</h1>
+        <div className="flex flex-row gap-4">
+          <a
+            href="https://github.com/CatalystDevOrg/Catalyst/releases?q=beta"
+            target="_blank"
+            className="button bg-orange-400 text-white border-white/25 border-2"
+          >
+            Get Beta
+          </a>
+        </div>
       </div>
     );
   }
