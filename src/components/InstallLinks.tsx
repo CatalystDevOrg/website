@@ -45,9 +45,16 @@ export default class InstallLinks extends React.Component<
           <a
             href="https://github.com/CatalystDevOrg/Catalyst/releases?q=beta"
             target="_blank"
-            className="button bg-orange-400 text-white border-white/25 border-2"
+            className="button bg-orange-400 text-black border-white/25 border-2"
           >
             Get Beta
+          </a>
+          <a
+            href="https://github.com/CatalystDevOrg/Catalyst/releases?q=lts"
+            target="_blank"
+            className="button bg-blue-400 text-black border-white/25 border-2"
+          >
+            Get LTS
           </a>
         </div>
       </div>
